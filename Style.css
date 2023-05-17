@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200&display=swap');
+:root{
+    --color-pear:#426B1F;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.main-page{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(Style.jpg);
+    backdrop-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nav-bar{
+    position: absolute; /* the position first */
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 5;
+    padding: 1.7rem 3.2rem ;
+    color: aliceblue;
+}
+.nav-bar a:hover{
+    color: #426B1F;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.title{
+    padding-left: 150px;
+    font-size: 1.6em;
+}
+
+.fa-code{
+    margin-right: 5px;
+    font-size: 0.7em;
+}
+
+.nav-bar ul li{
+    margin-right: 30px;
+}
+.nav-bar ul li a{
+    font-size: 1em;
+}
+#menu-bar{
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    top: 36px;
+    right: 60px;
+    display: none;
+}
+
+.main-page section{
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 90px;
+    right: 90px;
+}
+.main-page section .big-title{
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+.main-page section .buttons{
+    display: flex;
+    width: 400px;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+.main-page section .buttons a{
+    color: white;
+    font-size: 1.4rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.main-page section .buttons a:hover{
+    background-color: var(--color-pear);
+}
+
+.container{
+    width: 80%;
+    margin: 100px auto;
+}
+.container .partie{
+    margin: 80px 0 ;
+}
+.container .partie .titre{
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+.container .partie .paragraph{
+    font-size: 1.1rem;
+}
+
+.site-footer{
+    width: 100vw;
+    height: 400px;
+    background-color: #426B1F;
+}
+.site-footer .about{
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 20px 100px;
+}
+
+.site-footer
+{
+    background-color:var(--color-pear);
+    padding: 10px 0 10px;
+    font-size:15px;
+    line-height:24px;
+    color:white;
+}
+
+.site-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer hr.small
+{
+    margin:20px 0
+}
+.site-footer h6
+{
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+.site-footer a
+{
+    color:#737373;
+}
+.site-footer a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:white;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+.site-footer .social-icons
+{
+    text-align:right
+}
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:var(--color-pear);
+}
+.copyright-text
+{
+    margin:0;
+    color: white;
+}
+.copyright a{
+    color: white;
+}
+.social-icons
+{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+.social-icons li
+{
+    display:inline-block;
+    margin-bottom:4px
+}
+.social-icons li.title
+{
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+.social-icons a{
+    background-color:#eceeef;
+    color:white;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+    color:#fff;
+    background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+.social-icons a.facebook:hover
+{
+    background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+    background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+    background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+    background-color:#ea4c89
+}
+
+.site-footer .container .row{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.site-footer .container .row .about {
+    width: 55%;
+}
+.site-footer .container .row .Categories {
+    width: 25%;
+}
+.site-footer .container .row .Quick-Links {
+    width: 20%;
+}
+.line{
+    margin-bottom: 20px;
+}
+
+.show-menu{
+    top: 0;
+}
+
+@media (max-width:1100px){
+    nav ul{
+        padding-top: 120px;
+        position: fixed;
+        width: 100vw;
+        height: 480px;
+        top:-480px;
+        right: 0;
+        left: 0;
+        background-color: white;
+        display: flex;
+        flex-direction:  column;
+        align-items: flex-start;
+        z-index: 2;
+        display: block;
+        transition: all 0.5s ease;
+        font-size: 1.2rem;
+    }
+    nav ul li{
+        width: 20%;
+        height: 30%;
+    }
+    nav ul li a{
+        color: var(--color-pear);
+    }
+    #menu-bar{
+        display: block;
+        z-index: 3;
+    }
+
+    .container{
+        margin: 100px 100px;
+    }
+
+    .div-content .img-div img{
+        width: 100%;
+    }
+    .div-content .head-2-2{
+        display: none;
+    }
+    .site-footer .container{
+        margin: 30px 20px;
+    }
+    .site-footer .about{
+        width: 35%;
+    }
+}
+
+
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+    display:block;
+    margin-right:0;
+    font-weight:600
+}
+    .site-footer
+{
+    padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+    text-align:center
+}
+.wrapper .center-line{
+    left: 40px;
+}
+.wrapper .row{
+    margin: 30px 0 3px 60px;
+}
+.wrapper .row section{
+    width: 100%;
+}
+.row-1 section::before{
+    left: -7px;
+}
+.row-1 section .icon{
+    left: -60px;
+}
+.row .Categories{ 
+    margin-right: 20px;
+}
+}
+
+
+/* étudiant css //
